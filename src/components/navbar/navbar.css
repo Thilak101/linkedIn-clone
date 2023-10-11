@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+img {
+    cursor: pointer;
+}
+
+.navbar__searchtag {
+    background-color: #F5FBFF;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__searchtag input {
+    border: none;
+    outline: none;
+    background-color: #F5FBFF;
+    padding: 10px;
+    margin: 0 10px;
+
+}
+
+.navbar__logo {
+    display: flex;;
+    align-items: center;
+
+}
+
+.navbar__content {
+    display: flex;
+    color: gray;
+}
+
+.navbar__icons {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.navbar__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 100%;
+    
+}
+
+.navbar__icon svg {
+    font-size: 30px;
+}
+
+.navbar__profile img {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+.navbar__end {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+hr {
+    width: 1px;
+    height: 50px;
+    border: none;
+    background-color: lightgray;
+}
+
+svg {
+    cursor: pointer;
+}
+
+svg:hover {
+    color: black;
+}

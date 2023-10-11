@@ -1,0 +1,57 @@
+.rightSidebar__top {
+  margin: 20px 50px;
+  background-color: white;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.rightSidebar ul li {
+  list-style: circle;
+  margin: 10px 0px;
+}
+
+.rightSidebar small {
+  color: gray;
+}
+
+.rightSidebar__middle {
+  margin: 20px 50px;
+  background-color: white;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.rightSidebar__end {
+    display: flex;
+    align-items: center;
+}
+
+.rightSidebar__end svg {
+font-size: 20px;
+}
+
+.rightSidebar__middle ol li {
+    margin: 10px;
+}
+
+.rightSidebar__img {
+    position: relative;
+    left: 50px;
+}
+
+.rightSidebar__last {
+    text-align: center;
+}
+
+.rightSidebar__last div {
+    margin: 10px 0;
+}
+
+.rightSidebar__last_end {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 125px;
+}

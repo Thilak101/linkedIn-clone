@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import Login from './components/login/Login'
+import { onAuthStateChanged } from "firebase/auth"
+import { auth } from './firebaseConfig'
+import "./App.css"
+import Navbar from './components/navbar/Navbar'
+import Sidebar from './components/sidebar/Sidebar'
+import Feed from './components/feed/Feed'
+import RightSidebar from './components/rightSidebar/RightSidebar'
 
-function App() {
+
+const App = () => {
+
+  const [user, setUser] = useState(null)
+
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user)
+    })
+  }, [])
+
+  console.log(user)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      {
+        !user ? (
+          <Login setUser={setUser} />
+        ) : (
+          <>
+            <Navbar photoURL={user.photoURL} id={user.displayName} />
+            <div className='app__body'>
+              <Sidebar user={user} />
+              <Feed user={user} />
+              <RightSidebar />
+            </div>
+          </>
+
+        )
+      }
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

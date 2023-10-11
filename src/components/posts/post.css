@@ -1,0 +1,48 @@
+.post {
+  background-color: white;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.post__profile {
+  display: flex;
+}
+
+.post__profile h3 {
+  margin-left: 10px;
+}
+
+.post small {
+  color: gray;
+}
+
+.post__date small {
+  position: relative;
+  left: 10px;
+}
+
+.post__topInfo {
+  margin: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.post__topInfo img {
+  margin: 10px 0;
+  width: 500px;
+}
+
+.post__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: gray;
+}
+
+.post__bottom .post__bottom_icon {
+  display: flex;
+  align-items: center;
+}
+
+.post__bottom_icon small {
+  margin-left: 10px;
+}
